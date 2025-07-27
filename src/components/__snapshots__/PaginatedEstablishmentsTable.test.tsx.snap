@@ -1,0 +1,156 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PaginatedEstablishmentsTable renders correctly when is NOT loading 1`] = `
+<DocumentFragment>
+  <div
+    style="background: rgb(130, 199, 175); padding: 10px; margin-left: 50px; color: white;"
+  >
+    <h2>
+      Food Hygiene Ratings
+    </h2>
+    <table>
+      <thead>
+        <tr>
+          <th
+            style="padding-bottom: 10px; text-align: left; font-size: 20px;"
+          >
+            Business Name
+          </th>
+          <th
+            style="padding-bottom: 10px; text-align: left; font-size: 20px;"
+          >
+            Rating Value
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr
+          style="font-size: 20px;"
+        >
+          <td>
+            Joe
+          </td>
+          <td>
+            5
+          </td>
+        </tr>
+        <tr
+          style="font-size: 20px;"
+        >
+          <td>
+            Habib
+          </td>
+          <td>
+            4
+          </td>
+        </tr>
+        <tr
+          style="font-size: 20px;"
+        >
+          <td>
+            Mc Hogwarts
+          </td>
+          <td>
+            3
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <nav>
+      <button
+        disabled=""
+        style="margin: 0px 5px;"
+        type="button"
+      >
+        -
+      </button>
+      1
+      <button
+        style="margin: 0px 5px;"
+        type="button"
+      >
+        +
+      </button>
+    </nav>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`PaginatedEstablishmentsTable renders correctly when is loading 1`] = `
+<DocumentFragment>
+  <div
+    style="background: rgb(130, 199, 175); padding: 10px; margin-left: 50px; color: white;"
+  >
+    <h2>
+      Food Hygiene Ratings
+    </h2>
+    <table>
+      <thead>
+        <tr>
+          <th
+            style="padding-bottom: 10px; text-align: left; font-size: 20px;"
+          >
+            Business Name
+          </th>
+          <th
+            style="padding-bottom: 10px; text-align: left; font-size: 20px;"
+          >
+            Rating Value
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr
+          style="font-size: 20px;"
+        >
+          <td>
+            Joe
+          </td>
+          <td>
+            5
+          </td>
+        </tr>
+        <tr
+          style="font-size: 20px;"
+        >
+          <td>
+            Habib
+          </td>
+          <td>
+            4
+          </td>
+        </tr>
+        <tr
+          style="font-size: 20px;"
+        >
+          <td>
+            Mc Hogwarts
+          </td>
+          <td>
+            3
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <div>
+      Loading...
+    </div>
+    <nav>
+      <button
+        disabled=""
+        style="margin: 0px 5px;"
+        type="button"
+      >
+        -
+      </button>
+      1
+      <button
+        style="margin: 0px 5px;"
+        type="button"
+      >
+        +
+      </button>
+    </nav>
+  </div>
+</DocumentFragment>
+`;

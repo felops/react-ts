@@ -1,4 +1,4 @@
-import {render, screen} from '@testing-library/react' 
+import { render, screen } from '@testing-library/react';
 import { EstablishmentsTable } from './EstablishmentsTable';
 
 const mockData = [
