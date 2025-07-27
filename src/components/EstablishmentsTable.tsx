@@ -19,7 +19,7 @@ export const EstablishmentsTable = ({
       </thead>
       <tbody>
         {establishments && establishments?.map(establishment => (
-          <tr style={{ fontSize: "20px" }}>
+          <tr key={establishment?.BusinessName} style={{ fontSize: "20px" }}>
             <td>{establishment?.BusinessName}</td>
             <td>{establishment?.RatingValue}</td>
           </tr>

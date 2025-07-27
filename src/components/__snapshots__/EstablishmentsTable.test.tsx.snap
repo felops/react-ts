@@ -1,76 +1,54 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`EstablishmentsTable renders correctly 1`] = `
-<table>
-  <thead>
-    <tr>
-      <th
-        style={
-          Object {
-            "fontSize": "20px",
-            "paddingBottom": "10px",
-            "textAlign": "left",
-          }
-        }
+<DocumentFragment>
+  <table>
+    <thead>
+      <tr>
+        <th
+          style="padding-bottom: 10px; text-align: left; font-size: 20px;"
+        >
+          Business Name
+        </th>
+        <th
+          style="padding-bottom: 10px; text-align: left; font-size: 20px;"
+        >
+          Rating Value
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr
+        style="font-size: 20px;"
       >
-        Business Name
-      </th>
-      <th
-        style={
-          Object {
-            "fontSize": "20px",
-            "paddingBottom": "10px",
-            "textAlign": "left",
-          }
-        }
+        <td>
+          Joe
+        </td>
+        <td>
+          5
+        </td>
+      </tr>
+      <tr
+        style="font-size: 20px;"
       >
-        Rating Value
-      </th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr
-      style={
-        Object {
-          "fontSize": "20px",
-        }
-      }
-    >
-      <td>
-        Joe
-      </td>
-      <td>
-        5
-      </td>
-    </tr>
-    <tr
-      style={
-        Object {
-          "fontSize": "20px",
-        }
-      }
-    >
-      <td>
-        Habib
-      </td>
-      <td>
-        4
-      </td>
-    </tr>
-    <tr
-      style={
-        Object {
-          "fontSize": "20px",
-        }
-      }
-    >
-      <td>
-        Mc Hogwarts
-      </td>
-      <td>
-        3
-      </td>
-    </tr>
-  </tbody>
-</table>
+        <td>
+          Habib
+        </td>
+        <td>
+          4
+        </td>
+      </tr>
+      <tr
+        style="font-size: 20px;"
+      >
+        <td>
+          Mc Hogwarts
+        </td>
+        <td>
+          3
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</DocumentFragment>
 `;
