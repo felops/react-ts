@@ -1,0 +1,76 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`EstablishmentsTable renders correctly 1`] = `
+<table>
+  <thead>
+    <tr>
+      <th
+        style={
+          Object {
+            "fontSize": "20px",
+            "paddingBottom": "10px",
+            "textAlign": "left",
+          }
+        }
+      >
+        Business Name
+      </th>
+      <th
+        style={
+          Object {
+            "fontSize": "20px",
+            "paddingBottom": "10px",
+            "textAlign": "left",
+          }
+        }
+      >
+        Rating Value
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr
+      style={
+        Object {
+          "fontSize": "20px",
+        }
+      }
+    >
+      <td>
+        Joe
+      </td>
+      <td>
+        5
+      </td>
+    </tr>
+    <tr
+      style={
+        Object {
+          "fontSize": "20px",
+        }
+      }
+    >
+      <td>
+        Habib
+      </td>
+      <td>
+        4
+      </td>
+    </tr>
+    <tr
+      style={
+        Object {
+          "fontSize": "20px",
+        }
+      }
+    >
+      <td>
+        Mc Hogwarts
+      </td>
+      <td>
+        3
+      </td>
+    </tr>
+  </tbody>
+</table>
+`;
