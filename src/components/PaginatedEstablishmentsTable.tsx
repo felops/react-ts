@@ -1,8 +1,9 @@
 import { useState } from "react";
 import { EstablishmentsTable } from "./EstablishmentsTable";
 import { EstablishmentsTableNavigation } from "./EstablishmentsTableNavigation";
-import { getEstablishmentRatings } from "../api/ratingsAPI";
+import { getEstablishmentRatings, getEstablishmentRatingsByAuthority } from "../api/ratingsAPI";
 import { useQuery } from "@tanstack/react-query";
+import { getAuthorities } from "../api/authoritiesAPI";
 
 const tableStyle = {
   background: "#82C7AF",
@@ -15,16 +16,28 @@ const tableStyle = {
 export const PaginatedEstablishmentsTable = () => {
   const [pageNum, setPageNum] = useState(1);
   const [pageCount] = useState(100);
+  const [localAuthorityId, setLocalAuthorityId] = useState('');
+  const { data: authoritiesData } = useQuery({
+    queryKey: ['authorities'],
+    queryFn: () => getAuthorities()
+  });
   const { isLoading, data, error } = useQuery({
-    queryKey: ['establishments', pageNum],
-    queryFn: () => getEstablishmentRatings(pageNum)
+    queryKey: ['establishments', localAuthorityId, pageNum],
+    queryFn: () => localAuthorityId
+      ? getEstablishmentRatingsByAuthority(localAuthorityId, pageNum)
+      : getEstablishmentRatings(pageNum)
   });
 
-  async function handlePreviousPage() {
+  const onChangeLocalAuthority = (event: React.ChangeEvent<HTMLSelectElement>) => {
+    setLocalAuthorityId(event.target.value);
+    setPageNum(1);
+  };
+
+  const handlePreviousPage = async () => {
     pageNum > 1 && setPageNum(pageNum - 1);
   }
 
-  async function handleNextPage() {
+  const handleNextPage = async () => {
     pageNum < pageCount && setPageNum(pageNum + 1);
   }
 
@@ -35,6 +48,14 @@ export const PaginatedEstablishmentsTable = () => {
   return (
     <div style={tableStyle}>
       <h2>Food Hygiene Ratings</h2>
+      <select onChange={onChangeLocalAuthority} value={localAuthorityId}>
+        <option value="">All Authorities</option>
+        {authoritiesData?.authorities?.map((authority) => (
+          <option key={authority.LocalAuthorityId} value={authority.LocalAuthorityId}>
+            {authority.Name}
+          </option>
+        ))}
+      </select>
       <EstablishmentsTable
         establishments={data?.establishments}
         isLoading={isLoading}

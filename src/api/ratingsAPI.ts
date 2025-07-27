@@ -31,3 +31,13 @@ export function getEstablishmentRatings(
     { headers: { "x-api-version": "2" } }
   ).then((res) => res.json());
 }
+
+export function getEstablishmentRatingsByAuthority(
+  authority: string,
+  pageNum: number
+): Promise<EstablishmentsType> {
+  return fetch(
+    `http://api.ratings.food.gov.uk/Establishments?localAuthorityId=${authority}&pageNumber=${pageNum}&pageSize=10`,
+    { headers: { "x-api-version": "2" } }
+  ).then((res) => res.json());
+}

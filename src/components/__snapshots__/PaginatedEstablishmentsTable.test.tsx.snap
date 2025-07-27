@@ -8,6 +8,28 @@ exports[`PaginatedEstablishmentsTable renders correctly when is NOT loading 1`] 
     <h2>
       Food Hygiene Ratings
     </h2>
+    <select>
+      <option
+        value=""
+      >
+        All Authorities
+      </option>
+      <option
+        value="1"
+      >
+        Authority 1
+      </option>
+      <option
+        value="2"
+      >
+        Authority 2
+      </option>
+      <option
+        value="3"
+      >
+        Authority 3
+      </option>
+    </select>
     <table>
       <thead>
         <tr>
@@ -84,6 +106,28 @@ exports[`PaginatedEstablishmentsTable renders correctly when is loading 1`] = `
     <h2>
       Food Hygiene Ratings
     </h2>
+    <select>
+      <option
+        value=""
+      >
+        All Authorities
+      </option>
+      <option
+        value="1"
+      >
+        Authority 1
+      </option>
+      <option
+        value="2"
+      >
+        Authority 2
+      </option>
+      <option
+        value="3"
+      >
+        Authority 3
+      </option>
+    </select>
     <table>
       <thead>
         <tr>
