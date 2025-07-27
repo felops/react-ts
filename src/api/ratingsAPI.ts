@@ -1,5 +1,10 @@
+export interface Establishment {
+  BusinessName: string;
+  RatingValue: string;
+}
+
 export type EstablishmentsType = {
-  establishments: {}[];
+  establishments: Establishment[];
   meta: {
     dataSource: string;
     extractDate: string;
