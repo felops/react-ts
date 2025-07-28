@@ -19,7 +19,7 @@ test.describe('EstablishmentsDetailsPage', () => {
   test('correctly load when go to establishment details', async ({ page }) => {
     page.getByText('!NOSH!').click();
     await expect(page.getByText('Establishment Details')).toBeVisible();
-    await expect(page.getByText('5/1/2024')).toBeVisible();
+    await expect(page.getByText('01/05/2024')).toBeVisible();
     await expect(page.getByText('Coronation Street')).toBeVisible();
     await expect(page.getByText('35b High Street')).toBeVisible();
     await expect(page.getByText('Auchterarder')).toBeVisible();

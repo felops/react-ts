@@ -20,16 +20,16 @@ export const EstablishmentDetailsPage = () => {
       <h1>Establishment Details</h1>
       {
         isLoading
-          ? <div style={{ height: "10rem" }}>Loading...</div>
+          ? <div style={{ height: "12rem" }}>Loading...</div>
           : (
-            <div style={{ display: "flex", flexDirection: "row" }}>
+            <div style={{ display: "flex", flexDirection: "row", fontSize: "1.2rem" }}>
               <div style={{ fontWeight: "bold", textTransform: "uppercase" }}>
                 <p>Date of inspection:</p>
                 <p>Rating:</p>
                 <p>Address:</p>
               </div>
               <div style={{ marginLeft: "1rem" }}>
-                <p>{data?.RatingDate ? new Date(data?.RatingDate).toLocaleDateString() : '-'}</p>
+                <p>{data?.RatingDate ? new Date(data?.RatingDate).toLocaleDateString("en-GB") : '-'}</p>
                 <p>{data?.RatingValue}</p>
                 <p>{data?.AddressLine1}</p>
                 <p>{data?.AddressLine2}</p>

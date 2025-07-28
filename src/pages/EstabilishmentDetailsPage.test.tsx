@@ -1,8 +1,7 @@
-import { fireEvent, render } from '@testing-library/react';
+import { fireEvent, render, screen } from '@testing-library/react';
 import { useQuery } from "@tanstack/react-query";
 import { EstablishmentDetailsPage } from './EstabilishmentDetailsPage';
 import { BrowserRouter } from 'react-router';
-import * as ReactRouter from 'react-router';
 
 const mockData = {
   RatingDate: new Date('2000-01-01T12:00:00Z'),
@@ -66,4 +65,21 @@ describe("EstabilishmentDetailsPage", () => {
     fireEvent.click(document.querySelector('button')!);
     expect(mockUseNavigate).toHaveBeenCalledWith(-1);
   });
+
+  it('should display error message when API call fails', async () => {
+    (useQuery as jest.Mock).mockReturnValueOnce({
+      isLoading: false,
+      data: mockData,
+      error: new Error('API call failed'),
+    });
+    render(
+      <BrowserRouter>
+        <EstablishmentDetailsPage />
+      </BrowserRouter>
+    );
+    expect(await screen.getByText('Error: please, try again later')).toBeTruthy();
+  });
 });
+
+
+

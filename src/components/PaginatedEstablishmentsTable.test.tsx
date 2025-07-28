@@ -97,7 +97,7 @@ describe("PaginatedEstablishmentsTable", () => {
     );
 
     const loading = await screen.getByText('Loading...');
-    expect(loading).toBeTruthy();
+    expect(await screen.getByText('Loading...')).toBeTruthy();
   });
 
   it('should NOT display loading state', async () => {
@@ -120,4 +120,23 @@ describe("PaginatedEstablishmentsTable", () => {
     const loading = await screen.queryAllByText('Loading...');
     expect(loading).toEqual([]);
   });
+
+  it('should display error message when API call fails', async () => {
+      (useQuery as jest.Mock).mockReturnValueOnce({
+        isLoading: false,
+        data: { authorities: mockAuthorityData },
+        error: null,
+      });
+      (useQuery as jest.Mock).mockReturnValueOnce({
+        isFetching: false,
+        data: { establishments: mockEstablishmentsData },
+        error: new Error('API call failed'),
+      });
+      render(
+        <BrowserRouter>
+          <PaginatedEstablishmentsTable />
+        </BrowserRouter>
+      );
+      expect(await screen.getByText('Error: please, try again later')).toBeTruthy();
+    });
 });

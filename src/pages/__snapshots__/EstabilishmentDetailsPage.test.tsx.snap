@@ -6,7 +6,7 @@ exports[`EstabilishmentDetailsPage renders correctly when is NOT loading 1`] = `
     Establishment Details
   </h1>
   <div
-    style="display: flex; flex-direction: row;"
+    style="display: flex; flex-direction: row; font-size: 1.2rem;"
   >
     <div
       style="font-weight: bold; text-transform: uppercase;"
@@ -25,7 +25,7 @@ exports[`EstabilishmentDetailsPage renders correctly when is NOT loading 1`] = `
       style="margin-left: 1rem;"
     >
       <p>
-        1/1/2000
+        01/01/2000
       </p>
       <p>
         5
@@ -56,7 +56,7 @@ exports[`EstabilishmentDetailsPage renders correctly when is loading 1`] = `
     Establishment Details
   </h1>
   <div
-    style="height: 10rem;"
+    style="height: 12rem;"
   >
     Loading...
   </div>
