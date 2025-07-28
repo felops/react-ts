@@ -5,14 +5,6 @@ import { getEstablishmentRatings, getEstablishmentRatingsByAuthority } from "../
 import { useQuery } from "@tanstack/react-query";
 import { getAuthorities } from "../api/authoritiesAPI";
 
-const tableStyle = {
-  background: "#82C7AF",
-  padding: "10px",
-  width: "max-content",
-  marginLeft: "50px",
-  color: "white",
-};
-
 export const PaginatedEstablishmentsTable = () => {
   const [pageNum, setPageNum] = useState(1);
   const [pageCount] = useState(100);
@@ -46,8 +38,7 @@ export const PaginatedEstablishmentsTable = () => {
   }
 
   return (
-    <div style={tableStyle}>
-      <h2>Food Hygiene Ratings</h2>
+    <>
       <select onChange={onChangeLocalAuthority} value={localAuthorityId}>
         <option value="">All Authorities</option>
         {authoritiesData?.authorities?.map((authority) => (
@@ -66,6 +57,6 @@ export const PaginatedEstablishmentsTable = () => {
         onPreviousPage={handlePreviousPage}
         onNextPage={handleNextPage}
       />
-    </div>
+    </>
   );
 };

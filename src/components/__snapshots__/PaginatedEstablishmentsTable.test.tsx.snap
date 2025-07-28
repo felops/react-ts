@@ -2,199 +2,215 @@
 
 exports[`PaginatedEstablishmentsTable renders correctly when is NOT loading 1`] = `
 <DocumentFragment>
-  <div
-    style="background: rgb(130, 199, 175); padding: 10px; margin-left: 50px; color: white;"
-  >
-    <h2>
-      Food Hygiene Ratings
-    </h2>
-    <select>
-      <option
-        value=""
-      >
-        All Authorities
-      </option>
-      <option
-        value="1"
-      >
-        Authority 1
-      </option>
-      <option
-        value="2"
-      >
-        Authority 2
-      </option>
-      <option
-        value="3"
-      >
-        Authority 3
-      </option>
-    </select>
-    <table>
-      <thead>
-        <tr>
-          <th
-            style="padding-bottom: 10px; text-align: left; font-size: 20px;"
-          >
-            Business Name
-          </th>
-          <th
-            style="padding-bottom: 10px; text-align: left; font-size: 20px;"
-          >
-            Rating Value
-          </th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr
-          style="font-size: 20px;"
+  <select>
+    <option
+      value=""
+    >
+      All Authorities
+    </option>
+    <option
+      value="1"
+    >
+      Authority 1
+    </option>
+    <option
+      value="2"
+    >
+      Authority 2
+    </option>
+    <option
+      value="3"
+    >
+      Authority 3
+    </option>
+  </select>
+  <table>
+    <thead>
+      <tr>
+        <th
+          style="padding-bottom: 10px; text-align: left; font-size: 20px;"
         >
-          <td>
+          Business Name
+        </th>
+        <th
+          style="padding-bottom: 10px; text-align: left; font-size: 20px;"
+        >
+          Rating Value
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr
+        style="font-size: 20px;"
+      >
+        <td>
+          <a
+            data-discover="true"
+            href="/22999/details"
+          >
             Joe
-          </td>
-          <td>
-            5
-          </td>
-        </tr>
-        <tr
-          style="font-size: 20px;"
-        >
-          <td>
+          </a>
+        </td>
+        <td>
+          5
+        </td>
+      </tr>
+      <tr
+        style="font-size: 20px;"
+      >
+        <td>
+          <a
+            data-discover="true"
+            href="/67890/details"
+          >
             Habib
-          </td>
-          <td>
-            4
-          </td>
-        </tr>
-        <tr
-          style="font-size: 20px;"
-        >
-          <td>
+          </a>
+        </td>
+        <td>
+          4
+        </td>
+      </tr>
+      <tr
+        style="font-size: 20px;"
+      >
+        <td>
+          <a
+            data-discover="true"
+            href="/09888/details"
+          >
             Mc Hogwarts
-          </td>
-          <td>
-            3
-          </td>
-        </tr>
-      </tbody>
-    </table>
-    <nav>
-      <button
-        disabled=""
-        style="margin: 0px 5px;"
-        type="button"
-      >
-        -
-      </button>
-      1
-      <button
-        style="margin: 0px 5px;"
-        type="button"
-      >
-        +
-      </button>
-    </nav>
-  </div>
+          </a>
+        </td>
+        <td>
+          3
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <nav>
+    <button
+      disabled=""
+      style="margin: 0px 5px;"
+      type="button"
+    >
+      -
+    </button>
+    1
+    <button
+      style="margin: 0px 5px;"
+      type="button"
+    >
+      +
+    </button>
+  </nav>
 </DocumentFragment>
 `;
 
 exports[`PaginatedEstablishmentsTable renders correctly when is loading 1`] = `
 <DocumentFragment>
-  <div
-    style="background: rgb(130, 199, 175); padding: 10px; margin-left: 50px; color: white;"
-  >
-    <h2>
-      Food Hygiene Ratings
-    </h2>
-    <select>
-      <option
-        value=""
-      >
-        All Authorities
-      </option>
-      <option
-        value="1"
-      >
-        Authority 1
-      </option>
-      <option
-        value="2"
-      >
-        Authority 2
-      </option>
-      <option
-        value="3"
-      >
-        Authority 3
-      </option>
-    </select>
-    <table>
-      <thead>
-        <tr>
-          <th
-            style="padding-bottom: 10px; text-align: left; font-size: 20px;"
-          >
-            Business Name
-          </th>
-          <th
-            style="padding-bottom: 10px; text-align: left; font-size: 20px;"
-          >
-            Rating Value
-          </th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr
-          style="font-size: 20px;"
+  <select>
+    <option
+      value=""
+    >
+      All Authorities
+    </option>
+    <option
+      value="1"
+    >
+      Authority 1
+    </option>
+    <option
+      value="2"
+    >
+      Authority 2
+    </option>
+    <option
+      value="3"
+    >
+      Authority 3
+    </option>
+  </select>
+  <table>
+    <thead>
+      <tr>
+        <th
+          style="padding-bottom: 10px; text-align: left; font-size: 20px;"
         >
-          <td>
+          Business Name
+        </th>
+        <th
+          style="padding-bottom: 10px; text-align: left; font-size: 20px;"
+        >
+          Rating Value
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr
+        style="font-size: 20px;"
+      >
+        <td>
+          <a
+            data-discover="true"
+            href="/22999/details"
+          >
             Joe
-          </td>
-          <td>
-            5
-          </td>
-        </tr>
-        <tr
-          style="font-size: 20px;"
-        >
-          <td>
+          </a>
+        </td>
+        <td>
+          5
+        </td>
+      </tr>
+      <tr
+        style="font-size: 20px;"
+      >
+        <td>
+          <a
+            data-discover="true"
+            href="/67890/details"
+          >
             Habib
-          </td>
-          <td>
-            4
-          </td>
-        </tr>
-        <tr
-          style="font-size: 20px;"
-        >
-          <td>
+          </a>
+        </td>
+        <td>
+          4
+        </td>
+      </tr>
+      <tr
+        style="font-size: 20px;"
+      >
+        <td>
+          <a
+            data-discover="true"
+            href="/09888/details"
+          >
             Mc Hogwarts
-          </td>
-          <td>
-            3
-          </td>
-        </tr>
-      </tbody>
-    </table>
-    <div>
-      Loading...
-    </div>
-    <nav>
-      <button
-        disabled=""
-        style="margin: 0px 5px;"
-        type="button"
-      >
-        -
-      </button>
-      1
-      <button
-        style="margin: 0px 5px;"
-        type="button"
-      >
-        +
-      </button>
-    </nav>
+          </a>
+        </td>
+        <td>
+          3
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <div>
+    Loading...
   </div>
+  <nav>
+    <button
+      disabled=""
+      style="margin: 0px 5px;"
+      type="button"
+    >
+      -
+    </button>
+    1
+    <button
+      style="margin: 0px 5px;"
+      type="button"
+    >
+      +
+    </button>
+  </nav>
 </DocumentFragment>
 `;

@@ -1,4 +1,4 @@
-import { PaginatedEstablishmentsTable } from "./PaginatedEstablishmentsTable";
+import { Outlet } from "react-router";
 import Background from "../static/logo.svg";
 
 const logoStyle: { [key: string]: string | number } = {
@@ -8,13 +8,23 @@ const logoStyle: { [key: string]: string | number } = {
   margin: "20px auto",
 };
 
-const HomePage = () => {
+const tableStyle = {
+  background: "#82C7AF",
+  padding: "10px",
+  width: "max-content",
+  marginLeft: "50px",
+  color: "white",
+};
+
+const Wrapper = () => {
   return (
     <div>
       <header style={logoStyle} />
-      <PaginatedEstablishmentsTable />
+      <div style={tableStyle}>
+        <Outlet />
+      </div>
     </div>
   );
 };
 
-export default HomePage;
+export default Wrapper;

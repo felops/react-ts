@@ -1,9 +1,9 @@
 import { render, screen } from '@testing-library/react';
 import { useQuery } from '@tanstack/react-query';
 import { PaginatedEstablishmentsTable } from './PaginatedEstablishmentsTable';
+import { BrowserRouter } from 'react-router';
 
 jest.mock('@tanstack/react-query', () => ({
-  ...jest.requireActual("@tanstack/react-query"),
   useQuery: jest.fn(),
 }));
 
@@ -25,15 +25,18 @@ const mockAuthorityData = [
 const mockEstablishmentsData = [
   {
     BusinessName: "Joe",
-    RatingValue: "5"
+    RatingValue: "5",
+    FHRSID: "22999"
   },
   {
     BusinessName: "Habib",
-    RatingValue: "4"
+    RatingValue: "4",
+    FHRSID: "67890" 
   },
   {
     BusinessName: "Mc Hogwarts",
-    RatingValue: "3"
+    RatingValue: "3",
+    FHRSID: "09888" 
   },
 ]
 
@@ -49,7 +52,11 @@ describe("PaginatedEstablishmentsTable", () => {
       data: { establishments: mockEstablishmentsData },
       error: null,
     });
-    const { asFragment } = render(<PaginatedEstablishmentsTable />);
+    const { asFragment } = render(
+      <BrowserRouter>
+        <PaginatedEstablishmentsTable />
+      </BrowserRouter>
+    );
     expect(asFragment()).toMatchSnapshot();
   });
 
@@ -64,7 +71,11 @@ describe("PaginatedEstablishmentsTable", () => {
       data: { establishments: mockEstablishmentsData },
       error: null,
     });
-    const { asFragment } = render(<PaginatedEstablishmentsTable />);
+    const { asFragment } = render(
+      <BrowserRouter>
+        <PaginatedEstablishmentsTable />
+      </BrowserRouter>
+    );
     expect(asFragment()).toMatchSnapshot();
   });
 
@@ -79,7 +90,11 @@ describe("PaginatedEstablishmentsTable", () => {
       data: { establishments: mockEstablishmentsData },
       error: null,
     });
-    render(<PaginatedEstablishmentsTable />);
+    render(
+      <BrowserRouter>
+        <PaginatedEstablishmentsTable />
+      </BrowserRouter>
+    );
 
     const loading = await screen.getByText('Loading...');
     expect(loading).toBeTruthy();
@@ -96,7 +111,11 @@ describe("PaginatedEstablishmentsTable", () => {
       data: { establishments: mockEstablishmentsData },
       error: null,
     });
-    render(<PaginatedEstablishmentsTable />);
+    render(
+      <BrowserRouter>
+        <PaginatedEstablishmentsTable />
+      </BrowserRouter>
+    );
 
     const loading = await screen.queryAllByText('Loading...');
     expect(loading).toEqual([]);

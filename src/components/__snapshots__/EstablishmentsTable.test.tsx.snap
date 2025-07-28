@@ -22,7 +22,12 @@ exports[`EstablishmentsTable renders correctly 1`] = `
         style="font-size: 20px;"
       >
         <td>
-          Joe
+          <a
+            data-discover="true"
+            href="/22999/details"
+          >
+            Joe
+          </a>
         </td>
         <td>
           5
@@ -32,7 +37,12 @@ exports[`EstablishmentsTable renders correctly 1`] = `
         style="font-size: 20px;"
       >
         <td>
-          Habib
+          <a
+            data-discover="true"
+            href="/67890/details"
+          >
+            Habib
+          </a>
         </td>
         <td>
           4
@@ -42,7 +52,12 @@ exports[`EstablishmentsTable renders correctly 1`] = `
         style="font-size: 20px;"
       >
         <td>
-          Mc Hogwarts
+          <a
+            data-discover="true"
+            href="/09888/details"
+          >
+            Mc Hogwarts
+          </a>
         </td>
         <td>
           3

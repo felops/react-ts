@@ -1,3 +1,4 @@
+import { Link } from "react-router";
 import { Establishment } from "../api/ratingsAPI";
 
 const headerStyle: { [key: string]: string | number } = {
@@ -26,8 +27,10 @@ export const EstablishmentsTable = ({
         </thead>
         <tbody>
           {establishments && establishments?.map(establishment => (
-            <tr key={establishment?.BusinessName} style={{ fontSize: "20px" }}>
-              <td>{establishment?.BusinessName}</td>
+            <tr key={establishment?.FHRSID} style={{ fontSize: "20px" }}>
+              <td>
+                <Link to={`${establishment.FHRSID}/details`}>{establishment?.BusinessName}</Link>
+              </td>
               <td>{establishment?.RatingValue}</td>
             </tr>
           ))}
