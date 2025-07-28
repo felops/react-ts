@@ -24,21 +24,43 @@ export type EstablishmentsType = {
   ];
 };
 
-export function getEstablishmentRatings(
+export type EstablishmentDetailType = {  
+  AddressLine1: string;
+  AddressLine2: string;
+  AddressLine3: string;
+  AddressLine4: string;
+  RatingDate: Date
+  RatingValue: string
+};
+
+export const getEstablishmentRatings = async (
   pageNum: number
-): Promise<EstablishmentsType> {
+): Promise<EstablishmentsType> => {
   return fetch(
     `http://api.ratings.food.gov.uk/Establishments/basic/${pageNum}/10`,
     { headers: { "x-api-version": "2" } }
   ).then((res) => res.json());
 }
 
-export function getEstablishmentRatingsByAuthority(
+export const getEstablishmentRatingsByAuthority = async (
   authority: string,
   pageNum: number
-): Promise<EstablishmentsType> {
+): Promise<EstablishmentsType> => {
   return fetch(
     `http://api.ratings.food.gov.uk/Establishments?localAuthorityId=${authority}&pageNumber=${pageNum}&pageSize=10`,
     { headers: { "x-api-version": "2" } }
   ).then((res) => res.json());
+}
+
+export const getEstablishmentRatingsById = async (
+  id?: string
+): Promise<EstablishmentDetailType> => {
+  if (!id) {
+    return Promise.reject(new Error("Establishment ID is required"));
+  }
+  const res = await fetch(
+    `http://api.ratings.food.gov.uk/Establishments/${id}`,
+    { headers: { "x-api-version": "2" } }
+  );
+  return await res.json();
 }

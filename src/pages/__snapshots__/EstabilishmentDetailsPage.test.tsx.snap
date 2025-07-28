@@ -1,0 +1,49 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`EstabilishmentDetailsPage renders correctly when is NOT loading 1`] = `
+<DocumentFragment>
+  <button>
+    go back
+  </button>
+  <h2>
+    Establishment Details
+  </h2>
+  <div>
+    <p>
+      Date of inspection: 1/1/2000
+    </p>
+    <p>
+      Rating: 5
+    </p>
+    <p>
+      Adress:
+    </p>
+    <p>
+      Coronation Street
+    </p>
+    <p>
+      Hide Park
+    </p>
+    <p>
+      New York
+    </p>
+    <p>
+      MC
+    </p>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`EstabilishmentDetailsPage renders correctly when is loading 1`] = `
+<DocumentFragment>
+  <button>
+    go back
+  </button>
+  <h2>
+    Establishment Details
+  </h2>
+  <p>
+    Loading...
+  </p>
+</DocumentFragment>
+`;
