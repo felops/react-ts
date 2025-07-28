@@ -1,4 +1,4 @@
-export interface Authorities {
+interface Authorities {
   LocalAuthorityId: number,
   LocalAuthorityIdCode: string,
   Name: string,

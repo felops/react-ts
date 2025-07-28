@@ -1,10 +1,6 @@
-export interface Establishment {
-  BusinessName: string;
-  RatingValue: string;
-  FHRSID: string;
-}
+import { Establishment } from "../models/Establishment";
 
-export type EstablishmentsType = {
+type EstablishmentsType = {
   establishments: Establishment[];
   meta: {
     dataSource: string;
@@ -24,7 +20,7 @@ export type EstablishmentsType = {
   ];
 };
 
-export type EstablishmentDetailType = {  
+type EstablishmentDetailType = {  
   AddressLine1: string;
   AddressLine2: string;
   AddressLine3: string;

@@ -38,7 +38,7 @@ describe("EstablishmentsTable", () => {
     );
     const headTitles = screen.getAllByRole('columnheader').map(th => th.textContent);
     
-    expect(headTitles).toEqual(['Business Name', 'Rating Value']);
+    expect(headTitles).toEqual(['', 'Business Name', 'Rating Value']);
   });
 
   it('render all data', async () => {

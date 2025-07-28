@@ -27,6 +27,7 @@ exports[`PaginatedEstablishmentsTable renders correctly when is NOT loading 1`] 
   <table>
     <thead>
       <tr>
+        <th />
         <th
           style="padding-bottom: 10px; text-align: left; font-size: 20px;"
         >
@@ -44,6 +45,11 @@ exports[`PaginatedEstablishmentsTable renders correctly when is NOT loading 1`] 
         style="font-size: 20px;"
       >
         <td>
+          <input
+            type="checkbox"
+          />
+        </td>
+        <td>
           <a
             data-discover="true"
             href="/22999/details"
@@ -59,6 +65,11 @@ exports[`PaginatedEstablishmentsTable renders correctly when is NOT loading 1`] 
         style="font-size: 20px;"
       >
         <td>
+          <input
+            type="checkbox"
+          />
+        </td>
+        <td>
           <a
             data-discover="true"
             href="/67890/details"
@@ -73,6 +84,11 @@ exports[`PaginatedEstablishmentsTable renders correctly when is NOT loading 1`] 
       <tr
         style="font-size: 20px;"
       >
+        <td>
+          <input
+            type="checkbox"
+          />
+        </td>
         <td>
           <a
             data-discover="true"
@@ -133,6 +149,7 @@ exports[`PaginatedEstablishmentsTable renders correctly when is loading 1`] = `
   <table>
     <thead>
       <tr>
+        <th />
         <th
           style="padding-bottom: 10px; text-align: left; font-size: 20px;"
         >
@@ -150,6 +167,11 @@ exports[`PaginatedEstablishmentsTable renders correctly when is loading 1`] = `
         style="font-size: 20px;"
       >
         <td>
+          <input
+            type="checkbox"
+          />
+        </td>
+        <td>
           <a
             data-discover="true"
             href="/22999/details"
@@ -165,6 +187,11 @@ exports[`PaginatedEstablishmentsTable renders correctly when is loading 1`] = `
         style="font-size: 20px;"
       >
         <td>
+          <input
+            type="checkbox"
+          />
+        </td>
+        <td>
           <a
             data-discover="true"
             href="/67890/details"
@@ -179,6 +206,11 @@ exports[`PaginatedEstablishmentsTable renders correctly when is loading 1`] = `
       <tr
         style="font-size: 20px;"
       >
+        <td>
+          <input
+            type="checkbox"
+          />
+        </td>
         <td>
           <a
             data-discover="true"
