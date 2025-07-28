@@ -49,6 +49,6 @@ To improve network management and provide built-in caching, I chose to use React
 Tooling is an area I initially aimed to improve, but I ultimately chose not to invest further time in it after hitting some roadblocks. I tried replacing `react-scripts` with Vite and try to experiment with Vitest for faster test runs, but ran into issues that weren't worth the time investment for this task. I also considered setting up ESLint for both linting and formatting (avoiding Prettier to keep everything in one tool), but I avoided and tried to keep consistency by myself - in a real-world scenario or larger project, I would revisit these improvements.
 
 
-## Style
+## Styling
 I considered using a component library to improve the UI, but introducing one would have required significant changes to the existing codebase. I also attempted to integrate Tailwind CSS and even tried migrating from Create React App (CRA) to Vite to make that setup smoother. However, the configuration took more time than expected, and I decided it wasn’t worth the effort for this task’s scope.
 Instead, I made a few small UI adjustments to improve the visual experience. Ideally, I would use Tailwind CSS for styling, as it provides flexibility and maintainability without the overhead of a full component library.
