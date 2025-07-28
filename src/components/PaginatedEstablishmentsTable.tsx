@@ -13,7 +13,7 @@ export const PaginatedEstablishmentsTable = () => {
     queryKey: ['authorities'],
     queryFn: () => getAuthorities()
   });
-  const { isLoading, data, error } = useQuery({
+  const { isFetching, data, error } = useQuery({
     queryKey: ['establishments', localAuthorityId, pageNum],
     queryFn: () => localAuthorityId
       ? getEstablishmentRatingsByAuthority(localAuthorityId, pageNum)
@@ -49,7 +49,7 @@ export const PaginatedEstablishmentsTable = () => {
       </select>
       <EstablishmentsTable
         establishments={data?.establishments}
-        isLoading={isLoading}
+        isLoading={isFetching}
       />
       <EstablishmentsTableNavigation
         pageNum={pageNum}

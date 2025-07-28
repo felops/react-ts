@@ -29,6 +29,11 @@ export const EstablishmentsTable = ({
             <th style={headerStyle}>Business Name</th>
             <th style={headerStyle}>Rating Value</th>
           </tr>
+          {isLoading && (
+            <tr>
+              <th colSpan={2}><div>Loading...</div></th>
+            </tr>
+          )}
         </thead>
         <tbody>
           {establishments && establishments?.map(establishment => (
@@ -48,7 +53,6 @@ export const EstablishmentsTable = ({
           ))}
         </tbody>
       </table>
-      {isLoading && <div>Loading...</div>}
     </>
   );
 };

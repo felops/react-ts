@@ -1,0 +1,176 @@
+{
+    "establishments": [
+        {
+            "FHRSID": 1466637,
+            "LocalAuthorityBusinessID": "R115D335BH/2",
+            "BusinessName": "!NOSH!",
+            "BusinessType": "Takeaway/sandwich shop",
+            "RatingValue": "Pass",
+            "RatingDate": "2024-05-01T00:00:00",
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "http://api.ratings.food.gov.uk/establishments/1466637"
+                }
+            ]
+        },
+        {
+            "FHRSID": 1315638,
+            "LocalAuthorityBusinessID": "219190",
+            "BusinessName": "\"A Cheeky Slice\"",
+            "BusinessType": "Retailers - other",
+            "RatingValue": "5",
+            "RatingDate": "2022-11-24T00:00:00",
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "http://api.ratings.food.gov.uk/establishments/1315638"
+                }
+            ]
+        },
+        {
+            "FHRSID": 648400,
+            "LocalAuthorityBusinessID": "P041542",
+            "BusinessName": "\"Five A Day\"",
+            "BusinessType": "Hospitals/Childcare/Caring Premises",
+            "RatingValue": "Exempt",
+            "RatingDate": "2020-01-29T00:00:00",
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "http://api.ratings.food.gov.uk/establishments/648400"
+                }
+            ]
+        },
+        {
+            "FHRSID": 647010,
+            "LocalAuthorityBusinessID": "PI/000049330",
+            "BusinessName": "\"Juicy B's\"",
+            "BusinessType": "Retailers - other",
+            "RatingValue": "5",
+            "RatingDate": "2023-07-28T00:00:00",
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "http://api.ratings.food.gov.uk/establishments/647010"
+                }
+            ]
+        },
+        {
+            "FHRSID": 1583687,
+            "LocalAuthorityBusinessID": "3605",
+            "BusinessName": "\"Kettle's On!\"",
+            "BusinessType": "Other catering premises",
+            "RatingValue": "5",
+            "RatingDate": "2023-04-11T00:00:00",
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "http://api.ratings.food.gov.uk/establishments/1583687"
+                }
+            ]
+        },
+        {
+            "FHRSID": 1016978,
+            "LocalAuthorityBusinessID": "63918",
+            "BusinessName": "\"Mills Hill Infant School\",",
+            "BusinessType": "School/college/university",
+            "RatingValue": "5",
+            "RatingDate": "2025-07-01T00:00:00",
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "http://api.ratings.food.gov.uk/establishments/1016978"
+                }
+            ]
+        },
+        {
+            "FHRSID": 1420640,
+            "LocalAuthorityBusinessID": "FR/000000038",
+            "BusinessName": "\"MOOR\"ISH MOMENTS",
+            "BusinessType": "Other catering premises",
+            "RatingValue": "5",
+            "RatingDate": "2019-10-29T00:00:00",
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "http://api.ratings.food.gov.uk/establishments/1420640"
+                }
+            ]
+        },
+        {
+            "FHRSID": 1584416,
+            "LocalAuthorityBusinessID": "HAC1603",
+            "BusinessName": "\"MU\"",
+            "BusinessType": "Restaurant/Cafe/Canteen",
+            "RatingValue": "5",
+            "RatingDate": "2025-06-04T00:00:00",
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "http://api.ratings.food.gov.uk/establishments/1584416"
+                }
+            ]
+        },
+        {
+            "FHRSID": 362160,
+            "LocalAuthorityBusinessID": "45206",
+            "BusinessName": "\"Park Lane Primary School\"",
+            "BusinessType": "School/college/university",
+            "RatingValue": "5",
+            "RatingDate": "2023-12-05T00:00:00",
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "http://api.ratings.food.gov.uk/establishments/362160"
+                }
+            ]
+        },
+        {
+            "FHRSID": 122188,
+            "LocalAuthorityBusinessID": "5076",
+            "BusinessName": "\"Playhouse Nursery\" Private Day Nursery",
+            "BusinessType": "Hospitals/Childcare/Caring Premises",
+            "RatingValue": "4",
+            "RatingDate": "2025-01-24T00:00:00",
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "http://api.ratings.food.gov.uk/establishments/122188"
+                }
+            ]
+        }
+    ],
+    "meta": {
+        "dataSource": "API",
+        "extractDate": "2025-07-28T12:14:12.0185044+01:00",
+        "itemCount": 10,
+        "returncode": "OK",
+        "totalCount": 600890,
+        "totalPages": 60089,
+        "pageSize": 10,
+        "pageNumber": 1
+    },
+    "links": [
+        {
+            "rel": "self",
+            "href": "http://api.ratings.food.gov.uk/establishments/basic/1/10"
+        },
+        {
+            "rel": "first",
+            "href": "http://api.ratings.food.gov.uk/establishments/basic/1/10"
+        },
+        {
+            "rel": "previous",
+            "href": "http://api.ratings.food.gov.uk/establishments/basic/1/10"
+        },
+        {
+            "rel": "next",
+            "href": "http://api.ratings.food.gov.uk/establishments/basic/2/10"
+        },
+        {
+            "rel": "last",
+            "href": "http://api.ratings.food.gov.uk/establishments/basic/60089/10"
+        }
+    ]
+}

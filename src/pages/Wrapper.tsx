@@ -26,25 +26,29 @@ const Wrapper = () => {
       <header style={logoStyle} />
       <div style={tableStyle}>
         <Outlet />
-        <h2>Favorites</h2>
         {
           favorites.length > 0 && (
-            <table>
-              <thead>
-                <tr>
-                  <th>Business Name</th>
-                  <th></th>
-                </tr>
-              </thead>
-              <tbody>
-                {favorites.map(establishment => (
-                  <tr key={establishment.FHRSID}>
-                    <td>{establishment.BusinessName}</td>
-                    <td><button onClick={() => toggleFavorite(establishment)}>Remove</button></td>
+            <>
+              <h2>Favorites</h2>
+              <table>
+                <thead>
+                  <tr>
+                    <th>Business Name</th>
+                    <th>Rating Value</th>
+                    <th></th>
                   </tr>
-                ))}
-              </tbody>
-            </table>
+                </thead>
+                <tbody>
+                  {favorites.map(establishment => (
+                    <tr key={establishment.FHRSID}>
+                      <td>{establishment.BusinessName}</td>
+                      <td>{establishment.RatingValue}</td>
+                      <td><button onClick={() => toggleFavorite(establishment)}>Remove</button></td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </>
           )
         }
       </div>

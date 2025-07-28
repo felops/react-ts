@@ -161,6 +161,15 @@ exports[`PaginatedEstablishmentsTable renders correctly when is loading 1`] = `
           Rating Value
         </th>
       </tr>
+      <tr>
+        <th
+          colspan="2"
+        >
+          <div>
+            Loading...
+          </div>
+        </th>
+      </tr>
     </thead>
     <tbody>
       <tr
@@ -225,9 +234,6 @@ exports[`PaginatedEstablishmentsTable renders correctly when is loading 1`] = `
       </tr>
     </tbody>
   </table>
-  <div>
-    Loading...
-  </div>
   <nav>
     <button
       disabled=""

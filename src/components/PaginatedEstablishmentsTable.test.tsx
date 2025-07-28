@@ -48,7 +48,7 @@ describe("PaginatedEstablishmentsTable", () => {
       error: null,
     });
     (useQuery as jest.Mock).mockReturnValueOnce({
-      isLoading: true,
+      isFetching: true,
       data: { establishments: mockEstablishmentsData },
       error: null,
     });
@@ -67,7 +67,7 @@ describe("PaginatedEstablishmentsTable", () => {
       error: null,
     });
     (useQuery as jest.Mock).mockReturnValueOnce({
-      isLoading: false,
+      isFetching: false,
       data: { establishments: mockEstablishmentsData },
       error: null,
     });
@@ -86,7 +86,7 @@ describe("PaginatedEstablishmentsTable", () => {
       error: null,
     });
     (useQuery as jest.Mock).mockReturnValueOnce({
-      isLoading: true,
+      isFetching: true,
       data: { establishments: mockEstablishmentsData },
       error: null,
     });
@@ -107,7 +107,7 @@ describe("PaginatedEstablishmentsTable", () => {
       error: null,
     });
     (useQuery as jest.Mock).mockReturnValueOnce({
-      isLoading: false,
+      isFetching: false,
       data: { establishments: mockEstablishmentsData },
       error: null,
     });
