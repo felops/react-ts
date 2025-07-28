@@ -58,7 +58,8 @@ describe("EstablishmentsTable", () => {
         <EstablishmentsTable establishments={mockData} />
       </BrowserRouter>
     );
-    const allBodyLines = await screen.findAllByRole('row');
-    expect(allBodyLines[1].style.fontSize).toEqual("20px");
+    const allBodyLines = await screen.findAllByRole('cell');
+    expect(allBodyLines[1]).toHaveClass("font-size-20");
+    expect(allBodyLines[2]).toHaveClass("font-size-20");
   });
 });

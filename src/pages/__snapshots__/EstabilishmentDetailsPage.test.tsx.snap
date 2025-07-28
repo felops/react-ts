@@ -2,48 +2,66 @@
 
 exports[`EstabilishmentDetailsPage renders correctly when is NOT loading 1`] = `
 <DocumentFragment>
-  <button>
-    go back
-  </button>
-  <h2>
+  <h1>
     Establishment Details
-  </h2>
-  <div>
-    <p>
-      Date of inspection: 1/1/2000
-    </p>
-    <p>
-      Rating: 5
-    </p>
-    <p>
-      Adress:
-    </p>
-    <p>
-      Coronation Street
-    </p>
-    <p>
-      Hide Park
-    </p>
-    <p>
-      New York
-    </p>
-    <p>
-      MC
-    </p>
+  </h1>
+  <div
+    style="display: flex; flex-direction: row;"
+  >
+    <div
+      style="font-weight: bold; text-transform: uppercase;"
+    >
+      <p>
+        Date of inspection:
+      </p>
+      <p>
+        Rating:
+      </p>
+      <p>
+        Address:
+      </p>
+    </div>
+    <div
+      style="margin-left: 1rem;"
+    >
+      <p>
+        1/1/2000
+      </p>
+      <p>
+        5
+      </p>
+      <p>
+        Coronation Street
+      </p>
+      <p>
+        Hide Park
+      </p>
+      <p>
+        New York
+      </p>
+      <p>
+        MC
+      </p>
+    </div>
   </div>
+  <button>
+    &lt;  go back
+  </button>
 </DocumentFragment>
 `;
 
 exports[`EstabilishmentDetailsPage renders correctly when is loading 1`] = `
 <DocumentFragment>
-  <button>
-    go back
-  </button>
-  <h2>
+  <h1>
     Establishment Details
-  </h2>
-  <p>
+  </h1>
+  <div
+    style="height: 10rem;"
+  >
     Loading...
-  </p>
+  </div>
+  <button>
+    &lt;  go back
+  </button>
 </DocumentFragment>
 `;

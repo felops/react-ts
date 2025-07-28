@@ -2,32 +2,30 @@
 
 exports[`EstablishmentsTable renders correctly 1`] = `
 <DocumentFragment>
-  <table>
+  <table
+    style="min-height: 25rem;"
+  >
     <thead>
       <tr>
         <th />
-        <th
-          style="padding-bottom: 10px; text-align: left; font-size: 20px;"
-        >
+        <th>
           Business Name
         </th>
-        <th
-          style="padding-bottom: 10px; text-align: left; font-size: 20px;"
-        >
+        <th>
           Rating Value
         </th>
       </tr>
     </thead>
     <tbody>
-      <tr
-        style="font-size: 20px;"
-      >
+      <tr>
         <td>
           <input
             type="checkbox"
           />
         </td>
-        <td>
+        <td
+          class="font-size-20"
+        >
           <a
             data-discover="true"
             href="/22999/details"
@@ -35,19 +33,21 @@ exports[`EstablishmentsTable renders correctly 1`] = `
             Joe
           </a>
         </td>
-        <td>
+        <td
+          class="font-size-20"
+        >
           5
         </td>
       </tr>
-      <tr
-        style="font-size: 20px;"
-      >
+      <tr>
         <td>
           <input
             type="checkbox"
           />
         </td>
-        <td>
+        <td
+          class="font-size-20"
+        >
           <a
             data-discover="true"
             href="/67890/details"
@@ -55,19 +55,21 @@ exports[`EstablishmentsTable renders correctly 1`] = `
             Habib
           </a>
         </td>
-        <td>
+        <td
+          class="font-size-20"
+        >
           4
         </td>
       </tr>
-      <tr
-        style="font-size: 20px;"
-      >
+      <tr>
         <td>
           <input
             type="checkbox"
           />
         </td>
-        <td>
+        <td
+          class="font-size-20"
+        >
           <a
             data-discover="true"
             href="/09888/details"
@@ -75,7 +77,9 @@ exports[`EstablishmentsTable renders correctly 1`] = `
             Mc Hogwarts
           </a>
         </td>
-        <td>
+        <td
+          class="font-size-20"
+        >
           3
         </td>
       </tr>

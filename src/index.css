@@ -14,7 +14,67 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  text-indent: 0;
+}
+
+th {
+  font-size: 1.6rem;
+  font-weight: 600;
+  text-align: left;
+}
+
+td {
+  font-size: 20px;
+}
+
+tfoot th,
+tfoot td {
+  border-top: var(--pico-border-width) solid var(--pico-table-border-color);
+  border-bottom: 0;
+}
+
+button {
+  border: none;
+  padding: 0.5rem 1rem;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+input,
+optgroup,
+select,
+textarea {
+  border: 1px solid #eee;
+  border-radius: 8px;
+  font-size: 1.2rem;
+  line-height: 2rem;
+  font-family: inherit;
+  padding: .6em 1rem;
+  width: 100%;
+} 
+
+input:hover, select:hover {
+  border: 1px solid #aaa;
+}
+
+input[type=checkbox] {
+  transform: scale(2);
+  padding: 1rem;
+  border: 1px solid #eee;
+}
+
+label {
+  display: block;
+  margin-bottom: .2rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.font-size-20 {
+  font-size: 20px !important;
 }

@@ -3,12 +3,6 @@ import { Establishment } from "../models/Establishment";
 import { useContext } from "react";
 import { FavoritesContext } from "../contexts/favorites";
 
-const headerStyle: { [key: string]: string | number } = {
-  paddingBottom: "10px",
-  textAlign: "left",
-  fontSize: "20px",
-};
-
 interface EstablishmentsTableProps {
   establishments: Establishment[] | undefined;
   isLoading?: boolean;
@@ -21,38 +15,36 @@ export const EstablishmentsTable = ({
   const { favorites, toggleFavorite } = useContext(FavoritesContext);
   
   return (
-    <>
-      <table>
-        <thead>
+    <table style={{ minHeight: '25rem' }}>
+      <thead>
+        <tr>
+          <th></th>
+          <th>Business Name</th>
+          <th>Rating Value</th>
+        </tr>
+        {isLoading && (
           <tr>
-            <th></th>
-            <th style={headerStyle}>Business Name</th>
-            <th style={headerStyle}>Rating Value</th>
+            <th colSpan={3}><div>Loading...</div></th>
           </tr>
-          {isLoading && (
-            <tr>
-              <th colSpan={2}><div>Loading...</div></th>
-            </tr>
-          )}
-        </thead>
-        <tbody>
-          {establishments && establishments?.map(establishment => (
-            <tr key={establishment?.FHRSID} style={{ fontSize: "20px" }}>
-              <td>
-                <input
-                  type="checkbox"
-                  checked={favorites.some(item => item.FHRSID === establishment.FHRSID)}
-                  onChange={() => toggleFavorite(establishment)}
-                />
-              </td>
-              <td>
-                <Link to={`${establishment.FHRSID}/details`}>{establishment?.BusinessName}</Link>
-              </td>
-              <td>{establishment?.RatingValue}</td>
-            </tr>
-          ))}
-        </tbody>
-      </table>
-    </>
+        )}
+      </thead>
+      <tbody>
+        {establishments && establishments?.map(establishment => (
+          <tr key={establishment?.FHRSID}>
+            <td>
+              <input
+                type="checkbox"
+                checked={favorites.some(item => item.FHRSID === establishment.FHRSID)}
+                onChange={() => toggleFavorite(establishment)}
+              />
+            </td>
+            <td className="font-size-20">
+              <Link to={`${establishment.FHRSID}/details`}>{establishment?.BusinessName}</Link>
+            </td>
+            <td className="font-size-20">{establishment?.RatingValue}</td>
+          </tr>
+        ))}
+      </tbody>
+    </table>
   );
 };

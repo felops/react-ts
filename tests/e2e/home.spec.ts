@@ -31,12 +31,12 @@ test.describe('HomePage', () => {
   test('correctly handle pagination', async ({ page }) => {
     await expect(page.getByText('!NOSH!')).toBeVisible();
     await expect(page.getByText('"Playhouse Nursery" Private Day Nursery')).toBeVisible();
-    await page.getByRole('button', { name: '+' }).click();
+    await page.getByRole('button', { name: 'next' }).click();
     await expect(page.getByText('Loading...')).toBeVisible();
     await expect(page.getByText('Loading...')).not.toBeVisible();
     await expect(page.getByText('"Rio Cinema"')).toBeVisible();
     await expect(page.getByText('#bankmunch')).toBeVisible();
-    await page.getByRole('button', { name: '-' }).click();
+    await page.getByRole('button', { name: 'previous' }).click();
     await expect(page.getByText('Loading...')).toBeVisible();
     await expect(page.getByText('Loading...')).not.toBeVisible();
     await expect(page.getByText('!NOSH!')).toBeVisible();

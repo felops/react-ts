@@ -2,6 +2,9 @@
 
 exports[`PaginatedEstablishmentsTable renders correctly when is NOT loading 1`] = `
 <DocumentFragment>
+  <label>
+    Filter by Authority:
+  </label>
   <select>
     <option
       value=""
@@ -24,32 +27,30 @@ exports[`PaginatedEstablishmentsTable renders correctly when is NOT loading 1`] 
       Authority 3
     </option>
   </select>
-  <table>
+  <table
+    style="min-height: 25rem;"
+  >
     <thead>
       <tr>
         <th />
-        <th
-          style="padding-bottom: 10px; text-align: left; font-size: 20px;"
-        >
+        <th>
           Business Name
         </th>
-        <th
-          style="padding-bottom: 10px; text-align: left; font-size: 20px;"
-        >
+        <th>
           Rating Value
         </th>
       </tr>
     </thead>
     <tbody>
-      <tr
-        style="font-size: 20px;"
-      >
+      <tr>
         <td>
           <input
             type="checkbox"
           />
         </td>
-        <td>
+        <td
+          class="font-size-20"
+        >
           <a
             data-discover="true"
             href="/22999/details"
@@ -57,19 +58,21 @@ exports[`PaginatedEstablishmentsTable renders correctly when is NOT loading 1`] 
             Joe
           </a>
         </td>
-        <td>
+        <td
+          class="font-size-20"
+        >
           5
         </td>
       </tr>
-      <tr
-        style="font-size: 20px;"
-      >
+      <tr>
         <td>
           <input
             type="checkbox"
           />
         </td>
-        <td>
+        <td
+          class="font-size-20"
+        >
           <a
             data-discover="true"
             href="/67890/details"
@@ -77,19 +80,21 @@ exports[`PaginatedEstablishmentsTable renders correctly when is NOT loading 1`] 
             Habib
           </a>
         </td>
-        <td>
+        <td
+          class="font-size-20"
+        >
           4
         </td>
       </tr>
-      <tr
-        style="font-size: 20px;"
-      >
+      <tr>
         <td>
           <input
             type="checkbox"
           />
         </td>
-        <td>
+        <td
+          class="font-size-20"
+        >
           <a
             data-discover="true"
             href="/09888/details"
@@ -97,7 +102,9 @@ exports[`PaginatedEstablishmentsTable renders correctly when is NOT loading 1`] 
             Mc Hogwarts
           </a>
         </td>
-        <td>
+        <td
+          class="font-size-20"
+        >
           3
         </td>
       </tr>
@@ -106,17 +113,19 @@ exports[`PaginatedEstablishmentsTable renders correctly when is NOT loading 1`] 
   <nav>
     <button
       disabled=""
-      style="margin: 0px 5px;"
       type="button"
     >
-      -
+      &lt;  previous
     </button>
-    1
+    <span
+      style="font-weight: bold; margin: 1rem;"
+    >
+      1
+    </span>
     <button
-      style="margin: 0px 5px;"
       type="button"
     >
-      +
+      next  &gt;
     </button>
   </nav>
 </DocumentFragment>
@@ -124,6 +133,9 @@ exports[`PaginatedEstablishmentsTable renders correctly when is NOT loading 1`] 
 
 exports[`PaginatedEstablishmentsTable renders correctly when is loading 1`] = `
 <DocumentFragment>
+  <label>
+    Filter by Authority:
+  </label>
   <select>
     <option
       value=""
@@ -146,24 +158,22 @@ exports[`PaginatedEstablishmentsTable renders correctly when is loading 1`] = `
       Authority 3
     </option>
   </select>
-  <table>
+  <table
+    style="min-height: 25rem;"
+  >
     <thead>
       <tr>
         <th />
-        <th
-          style="padding-bottom: 10px; text-align: left; font-size: 20px;"
-        >
+        <th>
           Business Name
         </th>
-        <th
-          style="padding-bottom: 10px; text-align: left; font-size: 20px;"
-        >
+        <th>
           Rating Value
         </th>
       </tr>
       <tr>
         <th
-          colspan="2"
+          colspan="3"
         >
           <div>
             Loading...
@@ -172,15 +182,15 @@ exports[`PaginatedEstablishmentsTable renders correctly when is loading 1`] = `
       </tr>
     </thead>
     <tbody>
-      <tr
-        style="font-size: 20px;"
-      >
+      <tr>
         <td>
           <input
             type="checkbox"
           />
         </td>
-        <td>
+        <td
+          class="font-size-20"
+        >
           <a
             data-discover="true"
             href="/22999/details"
@@ -188,19 +198,21 @@ exports[`PaginatedEstablishmentsTable renders correctly when is loading 1`] = `
             Joe
           </a>
         </td>
-        <td>
+        <td
+          class="font-size-20"
+        >
           5
         </td>
       </tr>
-      <tr
-        style="font-size: 20px;"
-      >
+      <tr>
         <td>
           <input
             type="checkbox"
           />
         </td>
-        <td>
+        <td
+          class="font-size-20"
+        >
           <a
             data-discover="true"
             href="/67890/details"
@@ -208,19 +220,21 @@ exports[`PaginatedEstablishmentsTable renders correctly when is loading 1`] = `
             Habib
           </a>
         </td>
-        <td>
+        <td
+          class="font-size-20"
+        >
           4
         </td>
       </tr>
-      <tr
-        style="font-size: 20px;"
-      >
+      <tr>
         <td>
           <input
             type="checkbox"
           />
         </td>
-        <td>
+        <td
+          class="font-size-20"
+        >
           <a
             data-discover="true"
             href="/09888/details"
@@ -228,7 +242,9 @@ exports[`PaginatedEstablishmentsTable renders correctly when is loading 1`] = `
             Mc Hogwarts
           </a>
         </td>
-        <td>
+        <td
+          class="font-size-20"
+        >
           3
         </td>
       </tr>
@@ -237,17 +253,19 @@ exports[`PaginatedEstablishmentsTable renders correctly when is loading 1`] = `
   <nav>
     <button
       disabled=""
-      style="margin: 0px 5px;"
       type="button"
     >
-      -
+      &lt;  previous
     </button>
-    1
+    <span
+      style="font-weight: bold; margin: 1rem;"
+    >
+      1
+    </span>
     <button
-      style="margin: 0px 5px;"
       type="button"
     >
-      +
+      next  &gt;
     </button>
   </nav>
 </DocumentFragment>

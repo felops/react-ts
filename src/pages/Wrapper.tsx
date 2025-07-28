@@ -4,32 +4,37 @@ import { FavoritesContext } from "../contexts/favorites";
 import { useContext } from "react";
 
 const logoStyle: { [key: string]: string | number } = {
-  width: "640px",
-  height: "200px",
+  width: "20rem",
+  height: "6.25rem",
   background: `transparent url(${Background}) no-repeat center`,
-  margin: "20px auto",
+  margin: "5rem auto",
 };
 
-const tableStyle = {
+const contentWrapper = {
+  flexGrow: 1,
   background: "#82C7AF",
-  padding: "10px",
-  width: "max-content",
+  padding: "2rem",
+  width: "90%",
   marginLeft: "50px",
   color: "white",
+  borderRadius: "5px",
 };
 
 const Wrapper = () => {
   const { favorites, toggleFavorite } = useContext(FavoritesContext);
 
   return (
-    <div>
+    <div style={{ display: "flex", flexDirection: "column", alignItems: "center" }}>
       <header style={logoStyle} />
-      <div style={tableStyle}>
+      <div style={contentWrapper}>
         <Outlet />
         {
           favorites.length > 0 && (
             <>
-              <h2>Favorites</h2>
+              <div style={{ margin: "2rem" }}>
+                <hr></hr>
+              </div>
+              <h1>Favorites</h1>
               <table>
                 <thead>
                   <tr>

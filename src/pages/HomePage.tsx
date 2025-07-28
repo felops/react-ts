@@ -3,7 +3,7 @@ import { PaginatedEstablishmentsTable } from "../components/PaginatedEstablishme
 const HomePage = () => {
   return (
     <>
-      <h2>Food Hygiene Ratings</h2>
+      <h1>Food Hygiene Ratings</h1>
       <PaginatedEstablishmentsTable />
     </>
   );

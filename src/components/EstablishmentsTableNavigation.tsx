@@ -1,7 +1,3 @@
-const buttonStyle = {
-  margin: "0 5px",
-};
-
 type EstablishmentsTableNavigationType = {
   pageNum: number;
   pageCount: number;
@@ -18,22 +14,20 @@ export const EstablishmentsTableNavigation = (
       {
         <button
           type="button"
-          style={buttonStyle}
           disabled={pageNum <= 1}
           onClick={onPreviousPage}
         >
-          -
+          &#60;&nbsp;&nbsp;previous
         </button>
       }
-      {pageNum}
+      <span style={{ fontWeight: "bold", margin: "1rem" }}>{pageNum}</span>
       {
         <button
           type="button"
-          style={buttonStyle}
           disabled={pageNum >= pageCount}
           onClick={onNextPage}
         >
-          +
+          next&nbsp;&nbsp;&#62;
         </button>
       }
     </nav>

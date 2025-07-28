@@ -39,6 +39,7 @@ export const PaginatedEstablishmentsTable = () => {
 
   return (
     <>
+      <label>Filter by Authority:</label>
       <select onChange={onChangeLocalAuthority} value={localAuthorityId}>
         <option value="">All Authorities</option>
         {authoritiesData?.authorities?.map((authority) => (
